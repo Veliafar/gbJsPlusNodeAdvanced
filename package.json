@@ -1,0 +1,20 @@
+{
+  "name": "htmljsnode",
+  "version": "1.0.0",
+  "description": "html js node gb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veliafar/gbJsPlusNodeAdvanced.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Veliafar/gbJsPlusNodeAdvanced/issues"
+  },
+  "homepage": "https://github.com/Veliafar/gbJsPlusNodeAdvanced#readme"
+}
