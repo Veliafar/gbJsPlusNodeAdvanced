@@ -26,7 +26,7 @@ const products = {
           <div class="goods__item__info goods__item-info">
             <h3 class="goods__item-info__title">{{item.product_name}}</h3>
             <p class="goods__item-info__text">
-              Lorem ipsum dolor.
+              {{item.description}}
             </p>
             <p class="goods__item-info__price">
               {{item.price}} $
