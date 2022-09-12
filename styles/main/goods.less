@@ -1,0 +1,114 @@
+.goods {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  &__describe {
+
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 48px;
+    gap: 30px;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    transition: all .5s ease-in;
+
+    &:hover .goods__img-wrapper__overlay {
+      opacity: 1;
+    }
+
+    &__overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      visibility: none;
+      transition: .5s ease;
+      background: rgba(58, 56, 56, 0.86);
+      &__text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .button {
+        background-color: transparent;
+        padding: 10px 12px;
+        text-decoration: none;
+        border: 1px solid var(--card-color);
+        color: var(--card-color);
+        fill: var(--card-color);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 14px;
+        line-height: 17px;
+
+        width: 138px;
+        height: 43px;
+        box-sizing: border-box;
+
+      }
+    }
+  }
+
+  &__item {
+    background-color: var(--card-soft-color);
+  }
+
+  &__item-info {
+    padding: 25px 16px 20px;
+
+    &__title {
+      text-transform: uppercase;
+      font-size: 13px;
+      line-height: 16px;
+      color: var(--black-color);
+    }
+
+    &__text {
+      margin-top: 12px;
+      font-weight: 300;
+      color: var(--black-light-color);
+    }
+
+    &__price {
+      margin-top: 18px;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--pink-color);
+    }
+  }
+
+  &__browse-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 48px 0 96px;
+    &__button {
+      width: 196px;
+    }
+  }
+}

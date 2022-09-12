@@ -1,0 +1,18 @@
+.sale-button {
+  padding: 14px 38px;
+  text-transform: capitalize;
+  border: 1px solid var(--pink-color);
+  color: var(--pink-color);
+  background-color: var(--card-color);
+  cursor: pointer;
+}
+.sale-button:hover {
+  background-color: var(--pink-color);
+  color: var(--card-color);
+}
+.sale-button:active {
+  border: 1px solid var(--pink-color--hover);
+  background-color: var(--pink-color--hover);
+  outline: var(--pink-color--hover) solid 3px;
+}
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,172 @@
+:root {
+  --reg-margin-top: 64px;
+}
+
+.registration {
+  &__header {
+    background-color: var(--reg-header-color);
+    height: 148px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__wrapper{
+
+
+      &__text {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 400;
+        color: var(--pink-color);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__data {
+    margin-top: var(--reg-margin-top);
+    height: 675px;
+
+    display: flex;
+    align-items: center;
+
+    &__wrapper {
+      display: flex;
+    }
+
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+
+    font-weight: 300;
+
+    &__radio-wrapper {
+      display: flex;
+      align-items: center;
+
+      margin-top: 20px;
+    }
+
+    &__label {
+      font-size: 16px;
+      line-height: 20px;
+
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+
+    &__input {
+
+      margin-top: 20px;
+
+      box-sizing: border-box;
+      padding: 12px 18px 16px;
+      border: 1px solid var(--input-border-color);
+
+      color: var(--pink-color);
+
+      &:focus {
+        border: 1px solid var(--pink-color);
+      }
+      &:focus-visible {
+        outline: 1px solid var(--pink-color);
+      }
+
+      &::placeholder {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: var(--input-placeholder-color);
+      }
+    }
+
+    &__radio {
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+
+    &__tip {
+      margin-top: 16px;
+      font-size: 13px;
+      line-height: 16px;
+      color: var(--input-placeholder-color);
+    }
+
+    &__button {
+      width: 167px;
+      margin-top: 40px;
+    }
+
+  }
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  flex: 1;
+
+  font-weight: 300;
+
+
+  &__wrapper {
+    width: 622px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &__text {
+    margin-top: 20px;
+
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &__list{
+    margin-top: 20px;
+    &__item{
+      position: relative;
+      padding-left: 40px;
+
+      font-size: 24px;
+      line-height: 28px;
+
+      &:not(:first-child){
+        margin-top: 16px;
+      }
+
+      &:before {
+        position: absolute;
+        content: '';
+        top: 11px;
+        left: 0px;
+        width: 1px;
+        height: 12px;
+        border-left: 2px solid var(--black-color);
+        transform: rotate(144deg);
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        top: 1px;
+        left: 12px;
+        width: 1px;
+        height: 24px;
+        border-left: 2px solid var(--black-color);
+        transform: rotate(40deg);
+
+      }
+    }
+  }
+}
+

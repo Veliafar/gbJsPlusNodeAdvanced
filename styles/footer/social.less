@@ -1,0 +1,53 @@
+.social {
+  height: 79px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-bkg);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    color: var(--card-mild-color);
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    width: 32px;
+    height: 32px;
+    background-color: var(--card-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+
+    cursor: pointer;
+
+    fill: var(--black-color);
+    &:hover {
+      background-color: var(--pink-color);
+      fill: var(--card-color);
+    }
+
+    &__link {
+    }
+    &__img {
+    }
+  }
+}

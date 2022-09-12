@@ -1,0 +1,54 @@
+.radio-button[type="radio"]:checked,
+.radio-button[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.radio-button[type="radio"]:checked + label,
+.radio-button[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 26px;
+  cursor: pointer;
+  display: inline-block;
+  color: var(--black-color);
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+}
+.radio-button[type="radio"]:checked + label:before,
+.radio-button[type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+  box-sizing: border-box;
+}
+.radio-button[type="radio"]:checked + label:after,
+.radio-button[type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: var(--pink-color);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+.radio-button[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.radio-button[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/*# sourceMappingURL=radio-button.css.map */

@@ -1,0 +1,43 @@
+.sale-button {
+
+  padding: 14px 18px;
+  text-transform: capitalize;
+  border: 1px solid var(--pink-color);
+  color: var(--pink-color);
+  fill: var(--pink-color);
+  background-color: var(--card-color);
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--pink-color);
+    color: var(--card-color);
+    fill: var(--card-color);
+  }
+  &:active {
+    border: 1px solid var(--pink-color--hover);
+    background-color: var(--pink-color--hover);
+    outline: var(--pink-color--hover) solid 3px;
+  }
+
+  &__icon {
+    margin-left: 20px;
+  }
+
+  &--invert {
+
+    color: var(--card-color);
+    fill: var(--card-color);
+    background-color: var(--pink-color);
+    &:hover {
+      background-color: var(--pink-color--hover);
+      color: var(--card-color);
+      fill: var(--card-color);
+    }
+    &:active {
+      opacity: 0.9;
+      outline: var(--pink-color--hover) solid 3px;
+    }
+  }
+}

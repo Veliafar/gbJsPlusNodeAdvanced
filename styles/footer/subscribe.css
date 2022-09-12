@@ -1,0 +1,15 @@
+.subscribe {
+  height: 448px;
+}
+.subscribe__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscribe__quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*# sourceMappingURL=subscribe.css.map */

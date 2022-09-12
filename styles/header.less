@@ -1,0 +1,134 @@
+:root {
+  --header-height: 76px;
+  --nav-vertical-padding: 36px;
+}
+
+.header {
+  background-color: var(--black-bkg);
+
+  height: var(--header-height);
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__menu-list {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      &:not(:first-child) {
+        margin-left: 32px;
+      }
+    }
+  }
+
+  &__search-icon {
+    margin-left: 40px;
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+  }
+
+  &__link {
+    fill: var(--menu-icon);
+    &:hover {
+      fill: var(--card-color);
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: var(--header-height);
+
+    height: var(--banner-height);
+    width: 232px;
+
+    background-color: var(--card-color);
+    box-sizing: border-box;
+    padding: var(--nav-vertical-padding) 34px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+
+
+    &__wrapper {
+      position: relative;
+    }
+
+    &__close {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+
+      border: none;
+      background-color: transparent;
+      padding: 0;
+
+      cursor: pointer;
+
+
+      &__icon {
+
+        fill: var(--sub-menu-color);
+        //filter: invert(44%) sepia(17%) saturate(0%) hue-rotate(191deg) brightness(93%) contrast(86%);
+        &:hover {
+          fill: var(--pink-color);
+          //filter: invert(66%) sepia(70%) saturate(3682%) hue-rotate(313deg) brightness(103%) contrast(89%);
+        }
+      }
+    }
+
+    &__title {
+      text-transform: uppercase;
+    }
+  }
+
+  &__nav-item {
+    margin-top: 24px;
+
+    &__title {
+      color: var(--pink-color);
+      text-transform: uppercase;
+    }
+  }
+
+  &__sub-list {
+    &__item {
+      margin-top: 12px;
+      margin-left: 24px;
+      color: var(--sub-menu-color);
+
+
+      &:hover {
+        cursor: pointer;
+        color: var(--pink-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./../styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <title>Registration | E-SHOP</title>
+    <base href="../">
+</head>
+
+<body>
+
+<script src="shared/html-js/header.js" type="text/javascript"></script>
+
+
+<main class="registration">
+    <section class="registration__header">
+        <div class="registration__header__wrapper container">
+            <h1 class="registration__header__wrapper__text">
+                registration
+            </h1>
+        </div>
+    </section>
+    <section class="registration__data">
+        <div class="registration__data__wrapper container">
+            <form class="registration__form">
+                <label class="registration__form__label">
+                    Your Name
+                </label>
+                <label class="w-100">
+                    <input
+                            class="registration__form__input w-100"
+                            type="text"
+                            placeholder="First Name">
+                    <span class="visually-hidden">first name</span>
+                </label>
+                <label class="w-100">
+                    <input
+                            class="registration__form__input w-100"
+                            type="text"
+                            placeholder="Last Name"
+                    >
+                    <span class="visually-hidden">last name</span>
+                </label>
+
+                <div class="registration__form__radio-wrapper">
+                    <p class="registration__form__radio">
+                        <input class="radio-button" type="radio" id="test1" name="radio-group" checked>
+                        <label for="test1">Male</label>
+                    </p>
+                    <p class="registration__form__radio">
+                        <input class="radio-button" type="radio" id="test2" name="radio-group">
+                        <label for="test2">Female</label>
+                    </p>
+                </div>
+
+                <label class="registration__form__label">
+                    Login details
+                </label>
+                <label class="w-100">
+                    <input
+                            class="registration__form__input w-100"
+                            type="text"
+                            placeholder="Email">
+                    <span class="visually-hidden">email</span>
+                </label>
+                <label class="w-100">
+                    <input
+                            class="registration__form__input w-100"
+                            type="password"
+                            placeholder="Password"
+                    >
+                    <span class="visually-hidden">password</span>
+                </label>
+
+                <p class="registration__form__tip">
+                    Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+                </p>
+
+                <button class="sale-button sale-button--invert registration__form__button"
+                        type="button">
+                    join now
+
+                    <svg class="sale-button__icon" width="17" height="10" viewBox="0 0 17 10"  xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"/>
+                    </svg>
+                </button>
+            </form>
+
+            <div class="benefits">
+                <div class="benefits__wrapper">
+                    <h2 class="benefits__title">loyalty has its perks</h2>
+                    <p class="benefits__text">
+                        Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+                    </p>
+                    <ul class="benefits__list">
+                        <li class="benefits__list__item">
+                            15% off welcome offer
+                        </li>
+                        <li class="benefits__list__item">
+                            Free shipping, returns and exchanges on all orders
+                        </li>
+                        <li class="benefits__list__item">
+                            $10 off a purchase on your birthday
+                        </li>
+                        <li class="benefits__list__item">
+                            Early access to products
+                        </li>
+                        <li class="benefits__list__item">
+                            Exclusive offers & rewards
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+<script src="shared/html-js/footer.js" type="text/javascript"></script>
+
+</body>
+
+<script src="scripts/header-menu.js" type="text/javascript"></script>
+
+</html>
