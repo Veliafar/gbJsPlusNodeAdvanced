@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/Veliafar/gbJsPlusNodeAdvanced/issues"
   },
-  "homepage": "https://github.com/Veliafar/gbJsPlusNodeAdvanced#readme"
+  "homepage": "https://github.com/Veliafar/gbJsPlusNodeAdvanced#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jasmine": "^3.7.0",
+    "moment": "^2.29.1",
+    "node-static": "^0.7.11",
+    "nodemon": "^2.0.10"
+  }
 }

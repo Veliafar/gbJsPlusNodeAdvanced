@@ -23,15 +23,21 @@
 <body>
 
 <div id="app" class="main">
-  <header-comp></header-comp>
+
+  <header-comp ref="headerComp"></header-comp>
   <banner></banner>
   <sales></sales>
   <products></products>
   <advantages></advantages>
   <footer-comp></footer-comp>
+
+  <error-comp ref="error"></error-comp>
+
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/ErrorComp.js"></script>
 <script src="js/BannerComp.js"></script>
 <script src="js/SalesComp.js"></script>
 <script src="js/AdvantagesComp.js"></script>

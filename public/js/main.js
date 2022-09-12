@@ -1,5 +1,3 @@
-const API_URL = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
-
 const app = new Vue({
   el: '#app',
   data() {
@@ -8,16 +6,46 @@ const app = new Vue({
     }
   },
   components: {
-    products, search, headerComp, footerComp
+    products, search, headerComp, footerComp, errorComp
   },
   methods: {
     getJson(url) {
-      return fetch(`${API_URL}${url}`)
-        .then((json) => json.json())
-        .catch((err) => {
-          console.error(err);
-          this.isDataError = true;
-        });
+      return fetch(url)
+        .then(result => result.json())
+        .catch(error => this.$refs.error.setText(error))
+    },
+    postJson(url, data) {
+      return fetch(url, {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+        .then(result => result.json())
+        .catch(error => this.$refs.error.setText(error))
+    },
+    putJson(url, data) {
+      return fetch(url, {
+        method: 'PUT',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+        .then(result => result.json())
+        .catch(error => this.$refs.error.setText(error))
+    },
+    delJson(url, data) {
+      return fetch(url, {
+        method: 'DELETE',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+        .then(result => result.json())
+        .catch(error => this.$refs.error.setText(error))
     },
   }
 })

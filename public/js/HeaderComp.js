@@ -26,7 +26,7 @@ const headerComp = {
                     </a>
                 </li>
 
-              <cart></cart>
+              <cart ref="cart"></cart>
             </ul>                     
             <menu-wrapper-comp v-if="isMenuShow"></menu-wrapper-comp>
         </div>
@@ -48,6 +48,9 @@ const headerComp = {
     },
     closeMenu() {
       this.isMenuShow = false;
+    },
+    testCLick() {
+      console.log('click test');
     }
   }
 }

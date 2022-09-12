@@ -313,9 +313,6 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
   border: 0;
-  background-color: limegreen;
-  color: white;
-  text-shadow: black 1px 1px 1px;
   position: relative;
 }
 .cart-button__count {
@@ -330,12 +327,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.cart-button:hover {
-  background-color: #3CD73C;
-}
-.cart-button:active {
-  background-color: #14AF14;
 }
 .cart-empty {
   display: flex;
@@ -597,6 +588,10 @@ h1 {
   width: 138px;
   height: 43px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+.goods__img-wrapper__overlay .button:active {
+  opacity: 0.6;
 }
 .goods__item {
   background-color: var(--card-soft-color);
