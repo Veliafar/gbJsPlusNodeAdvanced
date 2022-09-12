@@ -1,8 +1,7 @@
-const footerTemplate = document.createElement('footer');
-footerTemplate.classList.add('footer');
-
-footerTemplate.innerHTML = `
-    <div class="subscribe">
+const footerComp = {
+  template: `
+     <footer class="footer">
+     <div class="subscribe">
         <div class="container subscribe__wrapper">
             <div class="subscribe__quote">
                 <img class="subscribe__quote__img" src="./img/quote/quote.jpg" alt="women">
@@ -61,6 +60,6 @@ footerTemplate.innerHTML = `
             </ul>
         </div>
     </div>
-`;
-
-document.body.appendChild(footerTemplate);
+</footer>
+  `,
+}

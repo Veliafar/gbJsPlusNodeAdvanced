@@ -1,0 +1,238 @@
+@height: 32px;
+
+@offset: 4px;
+@offset-md: calc(@offset * 4);
+@offset-sm: calc(@offset * 2);
+
+@accent: limegreen;
+@accent-hover: #3CD73C;
+@accent-active: #14AF14;
+@color-lvl-1: #F4F3F7;
+@color-danger: red;
+@color-lvl-2: white;
+
+.cart {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  .search-form {
+    display: flex;
+    align-items: center;
+
+    &-input {
+      position: relative;
+    }
+
+    &__input {
+      border: none;
+      height: @height;
+      padding: @offset-sm;
+      padding-right: 32px;
+      border-radius: @offset 0 0 @offset;
+    }
+    &__input-clear {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: 4px;
+      top: 6px;
+      border-radius: 50%;
+      background-color: lightgrey;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    &__button {
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: @height;
+      padding: @offset-sm;
+      background-color: @accent;
+      color: @color-lvl-2;
+      border-radius: 0 @offset  @offset 0;
+      cursor: pointer;
+
+      &:hover {
+        background-color: @accent-hover;
+      }
+
+      &:active {
+        background-color: @accent-active;
+      }
+      &:disabled {
+        background-color: gray;
+      }
+    }
+  }
+
+
+  &-button {
+    margin-left: @offset-md;
+
+    height: @height;
+
+    display: flex;
+    padding: @offset-sm;
+    align-items: center;
+    border-radius: @offset;
+    cursor: pointer;
+    border: 0;
+    background-color: @accent;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+
+    position: relative;
+    &__count {
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      background-color: red;
+      color: @color-lvl-2;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:hover {
+      background-color: @accent-hover;
+    }
+
+    &:active {
+      background-color: @accent-active;
+    }
+  }
+
+  &-empty {
+    display: flex;
+    flex: 1;
+    width: 300px;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-modal {
+    position: absolute;
+
+    top: 64px;
+    right: 0;
+
+    padding: @offset-md;
+
+    min-width: 340px;
+    min-height: 200px;
+    background-color: @color-lvl-2;
+    //border: 1px solid black;
+    border-radius: @offset;
+    box-shadow: 4px 13px 30px 3px rgba(34, 60, 80, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:first-child) {
+      margin-top: @offset-md;
+    }
+
+    &__header {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin-left: @offset-md;
+      margin-right: @offset-md;
+
+      .product-overflow() {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 92px;
+        white-space: nowrap;
+      }
+
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .product-overflow;
+      }
+      &__price {
+        .product-overflow;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .price-control {
+        display: flex;
+        align-items: center;
+
+        &__button {
+          font-weight: bold;
+          padding: @offset;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          background-color: @accent;
+          color: @color-lvl-2;
+          border: none;
+          border-radius: @offset;
+          cursor: pointer;
+
+          &--minus {
+            margin-right: @offset-sm;
+          }
+
+          &--plus {
+            margin-left: @offset-sm;
+          }
+
+          &:hover {
+            background-color: @accent-hover;
+          }
+
+          &:active {
+            background-color: @accent-active;
+          }
+
+          &--delete {
+            margin-left: @offset-sm;
+            background-color: @color-danger;
+          }
+        }
+      }
+    }
+  }
+}

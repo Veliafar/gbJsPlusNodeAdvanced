@@ -33,12 +33,7 @@
   &__menu-list {
     display: flex;
     align-items: center;
-
-    &__item {
-      &:not(:first-child) {
-        margin-left: 32px;
-      }
-    }
+    gap: 32px;
   }
 
   &__search-icon {
@@ -60,7 +55,7 @@
   }
 
   &__nav {
-    display: none;
+    display: block;
 
     position: absolute;
     z-index: 1;
@@ -74,8 +69,6 @@
     box-sizing: border-box;
     padding: var(--nav-vertical-padding) 34px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-
-
 
     &__wrapper {
       position: relative;
